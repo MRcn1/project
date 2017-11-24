@@ -1,0 +1,334 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#div{
+	width: 1349px;
+	margin: 0 auto;
+}
+
+header{
+	width: 1349px;
+	height: 80px;
+	background-color: #444250;
+	position: fixed;
+	z-index: 2;
+	
+}
+
+#nav{
+	width: 80%;
+	height: 80px;
+	margin: 0 auto;
+}
+
+#nav img{
+	margin: 10px 0 0 0;
+	float: left;
+}
+
+#nav ul li{
+	float: right;
+	list-style: none;
+}
+
+#nav ul li a{
+	display: inline-block;
+	width: 90px;
+	height: 80px;
+	line-height: 90px;
+	text-decoration:none;
+	color: white;
+	text-align: center;
+	font-size: 14px;
+}
+
+#nav .header_a{
+	background: #c30e23;
+}
+
+#nav ul li a:hover{
+	background-color:#565561;
+}
+
+#sybg{
+	width: 100%;
+	height: 530px;
+	position: relative;
+	overflow: hidden;
+}
+
+#sybg .first_ul li{
+	width: 100%;
+	height: 450px;
+	list-style: none;
+	position: relative;
+	margin-top: 80px;
+}
+
+#sybg .last_ul{
+	position: absolute;
+	right: 50px;
+	top: 480px;
+}
+
+#sybg .last_ul li{
+	float: left;
+	width: 14px;
+	height: 14px;
+	list-style: none;
+	border:1px solid red;
+	margin-left: 5px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+#sybg .red{
+	background-color: red;
+}
+
+#content{
+	width: 100%;
+	height:550px;
+	background-color: #c30d23;
+	position: relative;
+}
+
+
+#content h1{
+	width: 150px;
+	height: 40px;
+	position: absolute;
+	margin: 20px 0 0 600px;
+	background-color: #dfd2b9;
+	font-size: 20px;
+	line-height: 40px;
+	border-radius: 25px;
+	color: red;
+	text-align: center;
+}
+
+#content .content_st{
+	width: 335px;
+	height: 465px;
+	background-color: #a20d1f;
+	position: relative;
+	margin: 85px -50px 0 115px;
+	float: left;
+}
+
+#content .content_st img{
+	width: 210px;
+	height:210px;
+	margin-left: 70px;
+}
+
+#content .content_st h2{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+#content .content_st p{
+	width: 270px;
+	margin:60px 0 0 40px;
+	color: white;
+	line-height: 25px;
+	text-indent:15px;
+}
+
+footer{
+	width: 100%;
+	height:750px;
+	background-color: #302a34;
+	position: relative;
+}
+
+footer h1{
+	width: 150px;
+	height: 40px;
+	position: absolute;
+	margin: 20px 0 0 600px;
+	background-color: #dfd2b9;
+	font-size: 20px;
+	line-height: 40px;
+	border-radius: 25px;
+	color: black;
+	text-align: center;
+}
+
+footer .new_left{
+	width: 430px;
+	height: 430px;
+	position:absolute;
+	margin: 100px 0 0 135px;
+}
+
+footer .new_left img{
+	width: 430px;
+}
+
+footer .new_left h2{
+	color: white;
+	margin: 30px 0 10px 0;
+	font-size: 18px;
+}
+
+footer .new_left h3{
+	color: white;
+	margin: 10px 0 10px 0;
+	font-size: 15px;
+}
+
+footer .new_left h4{
+	color: white;
+	margin: 10px 0 10px 0;
+	font-size: 20px;
+}
+
+footer .new_right{
+	width: 560px;
+	height: 430px;
+	position: absolute;
+	margin: 100px 0 0 650px;
+}
+
+footer .new_right article{
+	width: 568px;
+	height: 40px;
+}
+
+footer .new_right .txt{
+	width: 500px;
+	height: 40px;
+	background: #474349;
+	border:0;
+	font-size: 19px;
+	text-indent: 10px;
+	color: white;
+}
+
+footer .new_right .btn{
+	width: 60px;
+	height: 42px;
+	font-size: 18px;
+	font-family: 宋体;
+	margin-left: -10px;
+	cursor: pointer;
+}
+
+#snew div{
+	display: none;
+}
+
+#snew .new_right_b{
+	width: 560px;
+	height: 400px;
+	position: relative;
+	display: block;
+}
+
+footer .new_right_b li{
+	height: 130px;
+	list-style-type: none;
+	position: relative;
+	color: white;
+	border-bottom: 1px solid #ccc;
+}
+
+footer .new_right_b li a{
+	text-decoration: none;
+	color: white;
+}
+
+footer .new_right_b li a:hover{
+	color: red;
+}
+
+footer .new_right_b h3 {
+	position: absolute;
+	margin:20px 0 0 10px;
+}
+
+footer .new_right_b h2 {
+	position: absolute;
+	margin:20px 0 0 99px;
+	font-size: 22px;
+}
+
+footer .new_right_b p {
+	position: absolute;
+	margin:50px 0 0 99px;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+footer .xuanxiangka{
+	width: 100px;
+	height: 30px;
+	margin-left: 100px;
+}
+
+footer .xuanxiangka ul li{
+	width: 22px;
+	height: 22px;
+	border:1px solid #605c63;
+	float: left;
+	list-style-type: none;
+	margin-right: 10px;
+}
+
+footer .xuanxiangka ul li input{
+	width: 22px;
+	height: 22px;
+	background-color: #302a34;
+	border:0px;
+	cursor: pointer;
+	outline: none;
+	color: white;
+}
+
+footer .xuanxiangka ul input:hover{
+	color: #883a3f;
+	border:1px solid #883a3f;
+}
+
+footer .footer_bottom{
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	background-color: #a20d1f;
+	margin-top: 580px;
+}
+
+footer .footer_bottom figure{
+	width: 270px;
+	height: 80px;
+	line-height: 80px;
+	margin: 0 -110px 0 110px;
+	float: left;
+}
+
+footer .footer_bottom figure img{
+	width: 45px;
+	height: 50px;
+	margin: 15px 0 0 20px;
+}
+
+footer .footer_bottom figure span{
+	position: absolute;
+	margin: 0px 0 0 20px;
+	color: white;
+}
+
+footer .banquan{
+	width: 530px;
+	height: 60px;
+	position: absolute;
+	margin: 680px 0 0  400px;
+	text-align: center;
+	font-size: 15px;
+	color: white;
+}
+
