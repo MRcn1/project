@@ -29,16 +29,16 @@ var game={
 		}.bind(this)
 	},
 
-	moveLeft(){									//左移所有行
-		var before=String(this.data);			//为数组拍照保存在before中
-		for(var r=0;r<this.rn;r++){				//r从0开始，到<rn结束
-			this.moveLeftInRow(r)				//左移第r行
-		}										//循环结束
-		var after=String(this.data);			//为数组拍照保存在after中
-		if (before!=after) {					//如果before!=after
-			this.randomNum()					//随机生成数
+	moveLeft(){								
+		var before=String(this.data);			
+		for(var r=0;r<this.rn;r++){				
+			this.moveLeftInRow(r)				
+		}										
+		var after=String(this.data);			
+		if (before!=after) {					
+			this.randomNum()					
 			// if(this.isGameover()){this.state=this.GAMEOVER}
-			this.updateview()					//更新页面
+			this.updateview()					
 		}
 	},
 
@@ -58,29 +58,29 @@ var game={
 	// 	}
 	// },
 	
-	moveLeftInRow(r){							//左移第r行
-		for(var c=0;c<this.cn-1;c++){			//c从0开始，到<cn-1
-			var nextc=this.getNextInRow(r,c);	//查找r行c列下一个不为0的位置nextc
-			if (nextc==-1) {					//如果没找到，就退出循环
+	moveLeftInRow(r){							
+		for(var c=0;c<this.cn-1;c++){			
+			var nextc=this.getNextInRow(r,c);	
+			if (nextc==-1) {					
 				break;
-			}else if(this.data[r][c]==0){		//否则，如果c位置的值是0
-				this.data[r][c]=this.data[r][nextc];	//将nextc位置的值赋值给c位置
-				this.data[r][nextc]=0  			//将nextc位置的值置为0
-				c--  							//c留在原地
-			}else if(this.data[r][c]==this.data[r][nextc]){		//否则，如果c位置的值等于nextc的位置的值
-				this.data[r][c]*=2  			//将c位置的值*2
+			}else if(this.data[r][c]==0){		
+				this.data[r][c]=this.data[r][nextc];	
+				this.data[r][nextc]=0  			
+				c--  							
+			}else if(this.data[r][c]==this.data[r][nextc]){		
+				this.data[r][c]*=2  			
 				this.score+=this.data[r][c]
-				this.data[r][nextc]=0  			//将nextc的位置的值置为0
+				this.data[r][nextc]=0  			
 			}
 		}
 	},
-	getNextInRow(r,c){       					//查找r行c列下一个不为0的位置
-		for(var i=c+1;i<this.cn;i++){ 			//i从c+1开始，到<cn结束
-			if (this.data[r][i]!=0) {			//如果i位置的值不为0，就返回i
+	getNextInRow(r,c){       					
+		for(var i=c+1;i<this.cn;i++){ 			
+			if (this.data[r][i]!=0) {			
 				return i
-			}									//遍历结束				
+			}											
 		}
-		return -1     							//返回-1
+		return -1     							
 	},
 
 	moveRight(){
