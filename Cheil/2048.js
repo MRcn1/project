@@ -1,4 +1,4 @@
-// 哈哈哈
+
 var game={
 	data:null,cn:4,rn:4,
 	score:0,state:0,RUNNING:1,GAMEOVER:0,
